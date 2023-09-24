@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chaquetasm.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="website icon" type="icon" href="icon.jpg">
+    <title>Riverss</title>
+    <script src="todo.js"></script>
+    <script src="query.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#m1").hide();
+            $("#muj").click(function(){
+                $("#m1").slideToggle();
+            });
+            $("#ho1").hide();
+            $("#ho").click(function(){
+                $("#ho1").slideToggle();
+            });
+            $("#boton1").click(function(){
+                $(this).val("Agregado");
+            });
+            $("#boton1").dblclick(function(){
+                $(this).val("Agregar Al Carrito")
+            })
+            $("#boton2").click(function(){
+                $(this).val("Agregado");
+            }); 
+            $("#boton2").dblclick(function(){
+                $(this).val("Agregar Al Carrito")
+            });
+            $("#boton3").click(function(){
+                $(this).val("Agregado");
+            });
+            $("#boton3").dblclick(function(){
+                $(this).val("Agregar Al Carrito")
+            });
+        })
+    </script>
+</head>
+<header>
+
+    <a href="index.html"><img id="logo" src="logo.avif"></a>
+
+    <nav class="mainbuttons">
+        <li class="mainbuttons1">
+            <a href="index.html"><i class='bx bxs-home' ></i></a>
+        </li>
+        <li class="mainbuttons1">
+            <a href=""><i class='bx bxs-cart'></i></i></a>
+        </li>
+
+        <li class="mainbuttons1">
+            <a href="login.html"><i class='bx bxs-user bx'></i></a>
+        </li>
+    </nav>
+
+    <li id="muj">
+        <a href="#"><p class="genderbuttons">MUJER</p></a>
+    </li>
+    <li id="m1">
+        <a class="despl8" href="chaquetasm.html">&#128088; Chaquetas</a>
+        <br><br>
+        <a href="busosm.html" class="despl9">&#129355; Busos</a>
+        <br><br>
+        <a class="despl1" href="camisetasm.html">&#128090; Camisetas</a>
+        <br><br>
+        <a class="despl2" href="jeansm.html">&#128086; Pantalones</a>
+        <br><br>    
+        <a class="despl3" href="tenism.html">&#128095; Tenis</a>
+    </li>
+    <p class="linea">|</p>
+    <li id="ho">
+        <a href="#"><p class="genderbuttons">HOMBRE</p></a>
+    </li>
+    <li id="ho1">
+            <a class="despl7" href="chaquetah.html">&#128084; Chaquetas</a>
+            <br><br>
+            <a class="despl4" href="camisetash.html">&#128085; Camisetas</a>
+            <br><br>
+            <a class="despl5" id="tenis" href="jeansh.html">&#128086; Pantalones</a>
+            <br><br>
+            <a class="despl6" href="tenish.html">&#128094; Zapatos</a>
+    </li>
+
+    <nav>
+    <li class="whatsapp">
+        <a href="" class="whatsapp">SOPORTE WHATSAPP:+57 3165041672</a>
+    </li>
+    </nav>
+
+    <div class="buscador">
+    <input class="buscar" type="search" placeholder="Buscar"><i class='bx bx-search-alt'></i>
+    </div>
+     
+</header>
+<body>
+    <main class="tiposdedeportes">
+        <article>
+            <section class="tiposdedeportes2">
+            <div class="card">
+                <div class="flip-card">
+                     <div class="inner">
+                        <div class="front">
+                            
+                            <img class="soccerimg" src="buzo1.webp" alt="">
+                        </div>
+                        <div class="back">
+                            <h1 class="titulodecartas">
+                                Buzo verde
+                            </h1>
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt dolor quaerat, molestias cum praesentium eaque iure itaque provident.
+                        </p>
+                        <input type="button" id="boton1" value="Agregar Al Carrito">
+                        <button id="mensaje" onclick="compra()">¡RECOMENDACIÓN!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="card">
+                <div class="flip-card">
+                     <div class="inner">
+                        <div class="front">
+                            
+                            <img class="soccerimg" src="buso2.webp" alt="">
+                        </div>
+                        <div class="back">
+                            <h1 class="titulodecartas">
+                                Buzo negro
+                            </h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem accusantium pariatur alias ducimus autem odio minima suscipit iure molestias.
+                        </p>
+                        <input type="button" id="boton2" value="Agregar Al Carrito">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        
+            <div class="card">
+                <div class="flip-card">
+                     <div class="inner">
+                        <div class="front">
+                            
+                            <img class="soccerimg" src="buso3.webp" alt="">
+                        </div>
+                        <div class="back">
+                            <h1 class="titulodecartas">
+                                Buzo blanco
+                            </h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui at consequuntur soluta quaerat commodi aliquam! Porro ipsum voluptate quam deleniti possimus consequuntur.
+                        </p>
+                        <input type="button" id="boton3" value="Agregar Al Carrito">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+           </section>
+        </article>
+        </main>
+        <footer>
+            <ul>
+                <li class="icon">
+                <a class="icon" href=""><ion-icon name="logo-facebook"></ion-icon>Facebook</a>
+                </li>
+        
+                <li class="icon">   
+                    <a class="icon" href=""><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
+                </li>
+        
+                <li class="icon">
+                    <a class="icon" href=""><ion-icon name="logo-twitter"></ion-icon>Twitter</a>
+                </li>
+            </ul>
+        </footer>
+</body>
+</html>
